@@ -15,12 +15,19 @@
 
     <!-- The div to store the form to insert/update a specific task -->
     <div id="inserttask">
-        <form id="addForm"class="form-inline" method="POST">
+        <form id="addForm" class="form-inline" method="POST">
             <div class="form-group">
-                Task:
-                <input type="text" id = "taskDescription" class="form-control" name="description"/>
+                <div class="form-group">
+                    <label>Task:</label>
+                    <input type="text" id = "taskDescription" class="form-control" name="description"/>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="taskUrgent"
+                    name="urgent" value="empty">
+                    <label class="form-check-label" for="exampleCheck1">Urgent</label>
+                </div>
+                <button type="submit" class="btn btn-primary" id="addTask">Add</button>
             </div>
-            <button class="form-control" id="addTask">Add</button>
         </form>
     </div>
 </div>
